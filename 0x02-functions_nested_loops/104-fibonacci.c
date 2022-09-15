@@ -1,43 +1,38 @@
-#include <stdio.h>
+nclude <stdio.h>
 
 /**
-*main - prints out first 50
-*fibonacci suit numbers
-*Return: return 0
-*/
-
+ * *main - prints out first 98
+ * *fibonacci suit numbers
+ * *Return: return 0*
+ */
 int main(void)
 
 {
+	unsigned long int t0 = 0, t1 = 1, s;
 
-int inc;
+	int i;
 
-unsigned long n1 = 0, n2 = 1, n3 = 1, n4;
+	for (i = 1; i <= 98; i++)
+	{
+	s = t0 + t1;
 
-for (inc = 0; inc < 97; inc++)
+	if (i != 98)
+	{
+	printf("%lu, ", s);
 
-{
+	}
+	else
+	{
+	printf("%lu\n", s);
 
-n4 = n2 + n3;
+	}
 
-printf("%lu", n4);
+	t0 = t1;
 
-n1 = n2;
+	t1 = s;
 
-n2 = n3;
+	}
 
-n3 = n4;
-
-if (inc == 97)
-
-printf("\n");
-
-else
-
-printf(", ");
-
-}
-
-return (0);
+	return (0);
 
 }

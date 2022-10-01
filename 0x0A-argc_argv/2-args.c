@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -11,13 +12,11 @@
 
 int main(int argc, char *argv[])
 {
+	int n;
 
-/*Declaring variables*/
-int count = 0;
-
-if (argc > 0)
-{
-/*WHILE - Print each arguments*/
-while (count < argc)
-{
-printf("%s\n", argv[count]);
+	for (n = 0; n < argc; n++)
+	{
+		printf("%s\n", argv[n]);
+	}
+	return (0);
+}

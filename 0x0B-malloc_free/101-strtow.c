@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * len - returns length of str.
+ * len - len returns length of the str.
  * @str: string to be counted
  *
- * Retrun: length of the string
+ * Return: length of the string
  */
 
 int len(char *str)
@@ -48,6 +48,7 @@ int num_words(char *str)
 	}
 	return (words);
 }
+
 /**
  * strtow - splits a string into words.
  * @str: string to be splitted
